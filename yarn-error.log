@@ -1,0 +1,58 @@
+Arguments: 
+  /Users/shubo/.nvm/versions/node/v10.17.0/bin/node /usr/local/Cellar/yarn/1.12.1/libexec/bin/yarn.js add eslint eshint-loader babel-core babel-loader babel-preset-env --save-dev
+
+PATH: 
+  /Users/shubo/.jenv/shims:/Users/shubo/.jenv/bin:/opt/apache-maven-3.6.1/bin:/Library/Java/JavaVirtualMachines:/Users/shubo/Library/Android/sdk/platform-tools:/Users/shubo/Library/Android/sdk/tools:/Users/shubo/.rbenv/shims:/Users/shubo/.nvm/versions/node/v10.17.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  10.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/eshint-loader: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:63139:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:124547:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:125519:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:125441:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1143:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "dom-util",
+    "version": "0.1.0",
+    "description": "DOM utilities",
+    "main": "dist/index.js",
+    "files": ["dist"],
+    "scripts": {
+      "build": "webpack --config webpack.config.js",
+      "lint": "echo \"Error: no lint specified\" && exit 1",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "prepublish": "yarn run lint && yarn run test && yarn run build"
+    },
+    "keywords": [
+      "javascript",
+      "browser",
+      "dom"
+    ],
+    "author": "Shubo Chao",
+    "license": "MIT",
+    "devDependencies": {
+      "webpack": "^4.41.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
